@@ -5,8 +5,8 @@ body{
 h2 {
  font-size: 40px;
  text-align: center;
- border-bottom:solid black 10px;
- border-top:solid black 10px;
+ border:solid black 10px;
+
  padding: 5px;
  margin: 15px;
 background-color: white;
@@ -18,12 +18,11 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: white;
-    border-bottom:solid black 10px;
-    border-top:solid black 10px;
+    border:solid black 10px;
   }
   
   li {
-    float: left;
+    float:left;
   }
   
   li a {
@@ -35,5 +34,5 @@ ul {
   }
   
   li a:hover {
-    background-color: #111;
+    background-color: grey;
   }
