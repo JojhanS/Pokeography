@@ -38,16 +38,22 @@ ul {
   }
 
   img{
-    width: 500px;
+    width: 400px;
     height: 750px;
     padding-top: 30px;
-    display: flex;
+    float: left;
   }
 
   .imageEnd{
-    display: flex;
-    width: 500px;
+   float:right;
+    width: 400px;
     height: 750px;
     padding-top: 30px;
-    justify-self: end;
+  }
+
+  .weather{
+    width: 700px;
+    height: 750px;
+    padding-top: 30px;
+    padding-left: 100px;
   }
