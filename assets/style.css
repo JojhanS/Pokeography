@@ -31,6 +31,8 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
   }
   
   li a:hover {
@@ -38,14 +40,14 @@ ul {
   }
 
   .row {
-width: max-content;
-align-self: center;
-flex-wrap: wrap;
+justify-content: center;
+display: flex;
 }
 
 .col-4{
-width: 500px;
 height: 500px;
-padding-top: 50px;
+width: 500px;
+margin: 50px;
 flex-wrap: wrap;
+border: black solid 3px;
 }
