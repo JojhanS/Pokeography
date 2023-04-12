@@ -37,23 +37,15 @@ ul {
     background-color: grey;
   }
 
-  img{
-    width: 400px;
-    height: 750px;
-    padding-top: 30px;
-    float: left;
-  }
+  .row {
+width: max-content;
+align-self: center;
+flex-wrap: wrap;
+}
 
-  .imageEnd{
-   float:right;
-    width: 400px;
-    height: 750px;
-    padding-top: 30px;
-  }
-
-  .weather{
-    width: 700px;
-    height: 750px;
-    padding-top: 30px;
-    padding-left: 100px;
-  }
+.col-4{
+width: 500px;
+height: 500px;
+padding-top: 50px;
+flex-wrap: wrap;
+}
