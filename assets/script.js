@@ -1,13 +1,17 @@
 // Weather API
 var location = ""
-var currentWeather = ""
+var currentWeather = [
+    currentTime = ""
+    temperature = 
+    weatherCode = ""
+    windSpeed = 
+]
 
-fetch('http://api.weatherstack.com/current') {
-    ? accessKey = '4f8d7a4bb61c72c9b79facd1733456d1'
-    & query = location
-    & units = 'f'
-    & language = 'en'
-}
+fetch("http://api.weatherstack.com/current?access_key=4f8d7a4bb61c72c9b79facd1733456d1&query=New_York&units=f") 
+.then(function (response) {
+    return response.json();
+    })
+
 // Gets all water type pokemon
 fetch('https://pokeapi.co/api/v2/type/water', {
 })
