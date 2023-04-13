@@ -2,22 +2,26 @@
 var location = ""
 var currentWeather = [
     currentTime = ""
-    temperature = 
+    temperature = ""
     weatherCode = ""
-    windSpeed = 
+    windSpeed = ""
 ]
 
-fetch("http://api.weatherstack.com/current?access_key=4f8d7a4bb61c72c9b79facd1733456d1&query=New_York&units=f") 
+fetch("http://api.weatherstack.com/current?access_key=2efa48685540853e56dac3d000771904&query=New_York&units=f") 
 .then(function (response) {
     return response.json();
-    })
+})
 
-fetch('http://api.weatherstack.com/current') {
-    ? accessKey = '4f8d7a4bb61c72c9b79facd1733456d1'
-    & query = location
-    & units = 'f'
-    & language = 'en'
-}
+// Gets all water type pokemon
+fetch('https://pokeapi.co/api/v2/type/water', {
+})
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    var waterTypePokemons = data.pokemon.map(pokemon => pokemon.pokemon.name);
+    console.log(waterTypePokemons);
+  });
 
 document.getElementById('cityButton').addEventListener('click', function() {
   var pokemonType = document.getElementById('city').value;
