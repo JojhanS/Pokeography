@@ -75,6 +75,8 @@ display: block;
 border: 5px solid var(--black);
 margin-top: 5px;
 padding-left: 2px;
+float: right;
+margin-right: 10px;
 }
 
 label{
