@@ -1,16 +1,29 @@
 // Weather API
 var location = ""
-var currentWeather = [
-    currentTime = ""
-    temperature = ""
-    weatherCode = ""
-    windSpeed = ""
-]
+// var currentWeather = [
+//     currentTime = ""
+//     temperature = ""
+//     weatherCode = ""
+//     windSpeed = ""
+// ]
 
-fetch("http://api.weatherstack.com/current?access_key=2efa48685540853e56dac3d000771904&query=New_York&units=f") 
+// fetch("http://api.weatherstack.com/current?access_key=4f8d7a4bb61c72c9b79facd1733456d1&query="+location+"&units=f")
+fetch("http://api.weatherstack.com/current?access_key=2efa48685540853e56dac3d000771904&query="+location+"&units=f")
 .then(function (response) {
+    console.log("hi");
     return response.json();
 })
+//     .then(function(data) {
+//         var currentWeather = data.current
+// })
+
+function locationInput() {
+   var location = document.getElementById('city').addEventListener('click', function()
+)}
+
+function displayWeather() {
+    currentWeather = ""
+}
 
 // Gets all water type pokemon
 fetch('https://pokeapi.co/api/v2/type/water', {
@@ -23,10 +36,10 @@ fetch('https://pokeapi.co/api/v2/type/water', {
     console.log(waterTypePokemons);
   });
 
-document.getElementById('cityButton').addEventListener('click', function() {
-  var pokemonType = document.getElementById('city').value;
-  fetchPokemonsByType(pokemonType);
-});
+// document.getElementById('cityButton').addEventListener('click', function() {
+//   var pokemonType = document.getElementById('city').value;
+//   fetchPokemonsByType(pokemonType);
+// });
 
 
 function fetchPokemonsByType(type) {
