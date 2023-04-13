@@ -17,3 +17,7 @@ https://weatherstack.com/
 https://medium.com/@sergio13prez/fetching-them-all-poke-api-62ca580981a2
 
 ### Using Weatherstack API 
+Using PokeAPI
+https://medium.com/@sergio13prez/fetching-them-all-poke-api-62ca580981a2
+
+

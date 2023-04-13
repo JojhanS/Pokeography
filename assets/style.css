@@ -1,3 +1,8 @@
+:root{
+  --black:black;
+  --bgColor: white;
+}
+
 body{
  background-color: maroon;
 }
@@ -5,11 +10,11 @@ body{
 h2 {
  font-size: 40px;
  text-align: center;
- border:solid black 10px;
+ border:solid var(--black) 10px;
 
  padding: 5px;
  margin: 15px;
-background-color: white;
+background-color: var(--bgColor);
 }
 
 ul {
@@ -17,8 +22,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
-    border:solid black 10px;
+    background-color: var(--bgColor);
+    border:solid var(--black) 10px;
   }
   
   li {
@@ -27,10 +32,12 @@ ul {
   
   li a {
     display: block;
-    color: black;
+    color: var(--black);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
   }
   
   li a:hover {
@@ -38,14 +45,96 @@ ul {
   }
 
   .row {
-width: max-content;
-align-self: center;
-flex-wrap: wrap;
+justify-content: center;
+display: flex;
 }
 
-.col-4{
-width: 500px;
+.col-8{
 height: 500px;
-padding-top: 50px;
+width: 750px;
+margin: 50px;
 flex-wrap: wrap;
+border: var(--black) solid 3px;
+}
+
+.col-2{
+  height: 500px;
+  width: 300px;
+  margin: 50px;
+  flex-wrap: wrap;
+  border: var(--black) solid 3px;
+  }
+
+form{
+background-color:var(--bgColor);
+width: 200px;
+height: 120px ;
+margin-left: 20px;
+display: block;
+border: 5px solid var(--black);
+margin-top: 5px;
+padding-left: 2px;
+}
+
+label{
+  font-size: 20px;
+  color: var(--black);
+}
+
+.container{
+width: 3000px;
+height: 5000px;
+background-color: var(--bgColor);
+}
+
+@media screen and (max-width: 1600px) {
+  .col-8 {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .col-2 {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .col-8 {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .col-2 {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .col-8 {
+    width: 400px;
+    margin:10px;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .col-2 {
+    width: 100px;
+    margin:10px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .col-8 {
+    width: 250px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .col-2 {
+    width: 50px;
+    margin:10px;
+  }
 }
