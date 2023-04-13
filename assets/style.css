@@ -26,6 +26,13 @@ ul {
     border:solid var(--black) 10px;
   }
   
+audio{
+  float: right;
+  border: solid var(--black) px;
+  background-color: var(--bgColor);
+
+}
+
   li {
     float:left;
   }
