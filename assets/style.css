@@ -54,6 +54,7 @@ audio{
   .row {
 justify-content: center;
 display: flex;
+margin-top: 200px;
 }
 
 .col-8{
@@ -95,6 +96,17 @@ label{
 width: 3000px;
 height: 5000px;
 background-color: var(--bgColor);
+}
+
+.col-12 {
+  background-color: var(--bgColor);
+  border: 10px solid var(--black);
+  max-width: 1750px; 
+  min-height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 
