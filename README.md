@@ -15,3 +15,6 @@ https://weatherstack.com/
 ## Resources
 Using PokeAPI
 https://medium.com/@sergio13prez/fetching-them-all-poke-api-62ca580981a2
+
+
+![weather codes](https://user-images.githubusercontent.com/124634370/231611466-7a4ebe4a-e8e6-4aae-9815-cf2f6359ab80.png)

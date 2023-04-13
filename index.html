@@ -13,15 +13,23 @@
 <body>
     <h2>Pokeography</h2>
     <ul>
-        <li><a class="active" href="#searchBar">Search bar</a></li>
         <li><a href="#weather">Weather</a></li>
         <li><a href="#pokemon">Pokemon</a></li>
-        <li><a href="#about">About</a></li>
     </ul>
+    <form>
+        <label for="city">City Name:</label>
+        <input type="text" id="city" name="city">
+        <button type="submit">Submit</button>
+    </form>
+
     <div class="row">
-        <img class="col-4" src="./assets/images/placeholder.png" alt="placeholder">
-        <img class="weather col-4" src="./assets/images/placeholder.png" alt="placeholder">
-        <img class="imageEnd col-4" src="./assets/images/placeholder.png" alt="placeholder">
+        <img class="col-2" src="./assets/images/placeholder.png" alt="placeholder">
+        <img class="weather col-8" src="./assets/images/placeholder.png" alt="placeholder">
+        <img class="imageEnd col-2" src="./assets/images/placeholder.png" alt="placeholder">
+    </div>
+
+    <div class="pokemonList">
+        
     </div>
 </body>
 </html>
