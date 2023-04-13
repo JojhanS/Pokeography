@@ -55,6 +55,7 @@ width: 750px;
 margin: 50px;
 flex-wrap: wrap;
 border: var(--black) solid 3px;
+background-color: var(--bgColor);
 }
 
 .col-2{
@@ -86,6 +87,8 @@ width: 3000px;
 height: 5000px;
 background-color: var(--bgColor);
 }
+
+
 
 @media screen and (max-width: 1600px) {
   .col-8 {
