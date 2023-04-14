@@ -1,5 +1,5 @@
 // Weather API
-var location = ""
+var locationString = "New_York";
 // var currentWeather = [
 //     currentTime = ""
 //     temperature = ""
@@ -7,23 +7,41 @@ var location = ""
 //     windSpeed = ""
 // ]
 
-// fetch("http://api.weatherstack.com/current?access_key=4f8d7a4bb61c72c9b79facd1733456d1&query="+location+"&units=f")
-fetch("http://api.weatherstack.com/current?access_key=2efa48685540853e56dac3d000771904&query="+location+"&units=f")
+fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current?access_key=2efa48685540853e56dac3d000771904&query=" + locationString + "&units=f")
 .then(function (response) {
     console.log("hi");
     return response.json();
 })
-//     .then(function(data) {
-//         var currentWeather = data.current
-// })
+    .then(function(data) {
+        console.log(data)
+        // var currentWeather = data.current
+})
 
 function locationInput() {
-   var location = document.getElementById('city').addEventListener('click', function()
-)}
+   var locationString = document.getElementById('city').addEventListener('click', function(e){
 
-function displayWeather() {
-    currentWeather = ""
+   });
 }
+
+// // fetch("http://api.weatherstack.com/current?access_key=4f8d7a4bb61c72c9b79facd1733456d1&query="+location+"&units=f")
+// fetch("http://api.weatherstack.com/current?access_key=2efa48685540853e56dac3d000771904&query="+location+"&units=f")
+// .then(function (response) {
+//     console.log("hi");
+//     return response.json();
+// })
+//     .then(function(data) {
+//         console.log(data)
+//         // var currentWeather = data.current
+// })
+
+// function locationInput() {
+//    var locationString = document.getElementById('city').addEventListener('click', function(e){
+
+//    });
+// }
+// function displayWeather() {
+//     currentWeather = ""
+// }
 
 // Gets all water type pokemon
 fetch('https://pokeapi.co/api/v2/type/water', {
