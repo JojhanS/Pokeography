@@ -1,13 +1,18 @@
 // Weather API
-var locationString = "New_York";
+var locationString = ""
 // var currentWeather = [
 //     currentTime = ""
 //     temperature = ""
 //     weatherCode = ""
 //     windSpeed = ""
 // ]
-
-fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current?access_key=2efa48685540853e56dac3d000771904&query=" + locationString + "&units=f")
+document.getElementById('cityButton').addEventListener('click', function(event){
+    event.preventDefault();
+    locationString = document.getElementById('city').value;
+    getWeather(locationString)
+})
+function getWeather(locationString) {
+fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current?access_key=2efa48685540853e56dac3d000771904&query="+locationString+"&units=f")
 .then(function (response) {
     console.log("hi");
     return response.json();
@@ -16,12 +21,16 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
         console.log(data)
         // var currentWeather = data.current
 })
-
-function locationInput() {
-   var locationString = document.getElementById('city').addEventListener('click', function(e){
-
-   });
 }
+
+// function locationInput() {
+//     document.getElementById('city').addEventListener('click', function(e)
+// )}
+
+// function displayWeather() {
+//     document.getElementById('weather').append(data)
+// }
+
 
 // // fetch("http://api.weatherstack.com/current?access_key=4f8d7a4bb61c72c9b79facd1733456d1&query="+location+"&units=f")
 // fetch("http://api.weatherstack.com/current?access_key=2efa48685540853e56dac3d000771904&query="+location+"&units=f")
@@ -35,8 +44,8 @@ function locationInput() {
 // })
 
 // function locationInput() {
-//    var locationString = document.getElementById('city').addEventListener('click', function(e){
-
+//    var locationString = document.getElementById('city').addEventListener('click', function(e))
+// }
 //    });
 // }
 // function displayWeather() {
