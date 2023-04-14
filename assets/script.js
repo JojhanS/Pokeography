@@ -1,6 +1,6 @@
 // Weather API
 var locationString = "";
-
+var weatherContainer = document.getElementById("weather");
 document.getElementById('cityButton').addEventListener('click', function(event){
     event.preventDefault();
     locationString = document.getElementById('city').value;
