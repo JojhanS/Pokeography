@@ -14,9 +14,18 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
     return response.json();
 })
     .then(function(data) {
-        console.log(data)
+        var getWeatherCode = data.current.weather_code
+        var getWindSpeed = data.current.wind_speed
+        var getTemp = data.current.temperature
+        var isDay = data.current.is_day
+        console.log(getWindSpeed)
+        console.log(getTemp)
+        console.log(isDay)
+        console.log(getWeatherCode)
+
 })
 }
+
 
 
 
