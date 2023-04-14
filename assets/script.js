@@ -6,6 +6,7 @@ document.getElementById('cityButton').addEventListener('click', function(event){
     locationString = document.getElementById('city').value;
     getWeather(locationString)
 })
+
 function getWeather(locationString) {
 fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current?access_key=2efa48685540853e56dac3d000771904&query="+locationString+"&units=f")
 .then(function (response) {
