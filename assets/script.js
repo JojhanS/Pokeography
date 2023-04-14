@@ -36,9 +36,14 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
         }
         else if (getWeatherCode > 201) {
           fetchPokemonsByType("poison");
+          document.getElementById("img").src ="./assets/images/poison.gif";
+          document.getElementById("img2").src ="./assets/images/poison.gif";
         }
         else if (getWeatherCode > 199) {
-          fetchPokemonsByType("thunder");
+          fetchPokemonsByType("electric");
+          document.getElementById("img").src ="./assets/images/Lightning.gif";
+          document.getElementById("img2").src ="./assets/images/Lighting.gif";
+
         }
         else if (getWeatherCode > 115) {
           fetchPokemonsByType("grass");
