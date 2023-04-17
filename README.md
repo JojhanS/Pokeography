@@ -17,9 +17,8 @@ https://weatherstack.com/
 https://medium.com/@sergio13prez/fetching-them-all-poke-api-62ca580981a2
 
 ### Using Weatherstack API 
-Using PokeAPI
-https://medium.com/@sergio13prez/fetching-them-all-poke-api-62ca580981a2
-####WeatherCode	Condition	DayIcon	NightIcon
+
+#### WeatherCodes
 395	Moderate or heavy snow in area with thunder	wsymbol_0012_heavy_snow_showers	wsymbol_0028_heavy_snow_showers_night
 392	Patchy light snow in area with thunder	wsymbol_0016_thundery_showers	wsymbol_0032_thundery_showers_night
 389	Moderate or heavy rain in area with thunder	wsymbol_0024_thunderstorms	wsymbol_0040_thunderstorms_night
