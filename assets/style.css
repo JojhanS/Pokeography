@@ -17,7 +17,7 @@ h2 {
 background-color: var(--bgColor);
 }
 
-ul {
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -62,7 +62,7 @@ height: 500px;
 width: 750px;
 margin: 50px;
 flex-wrap: wrap;
-border: var(--black) solid 3px;
+border: var(--black) solid 5px;
 background-color: var(--bgColor);
 }
 
@@ -71,7 +71,7 @@ background-color: var(--bgColor);
   width: 300px;
   margin: 50px;
   flex-wrap: wrap;
-  border: var(--black) solid 3px;
+  border: var(--black) solid 5px;
   }
 
 form{
@@ -109,6 +109,34 @@ background-color: var(--bgColor);
   width: 50%;
 }
 
+#temp{
+  font-size: 30px;
+  border: none;
+  display: block;
+  float: left;
+  clear: left;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#weatherDesc{
+  font-size: 30px;
+  border: none;
+  display: block;
+  float: left;
+  clear: left;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+#windSpeed{
+  font-size: 30px;
+  border:0px;
+  float: left;
+  clear: left;
+  margin-top: 100px;
+  margin-left: 20px;
+}
 
 
 @media screen and (max-width: 1600px) {
