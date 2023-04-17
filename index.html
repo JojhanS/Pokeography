@@ -12,7 +12,7 @@
     <title>Pokeography</title>
 </head>
 <body>
-    <ul>
+    <ul class="nav">
         <li><a href="#weather">Weather</a></li>
         <li><a href="#pokemon">Pokemon</a></li>
         <audio controls loop src="./assets/audio/Pokemon.wav"></audio>>
@@ -25,9 +25,16 @@
     </form>
 
     <div class="row">
-        <img  id="img" class="col-2" src="./assets/images/Raining.gif" alt="placeholder">
-        <content id="weather" class="col-8"></content>
-        <img  id="img2" class="imageEnd col-2" src="./assets/images/Raining.gif" alt="placeholder">
+        <img  id="img" class="col-2" src="./assets/images/Default.png" alt="placeholder">
+       
+        <content id="weather" class="col-8">
+            <ul>
+                <li id="temp"> Temperature: </li>
+                <li id="weatherDesc">Weather Description: </li>
+                <li id="windSpeed">Wind Speed: </li>
+            </ul>
+        </content>
+        <img  id="img2" class="imageEnd col-2" src="./assets/images/Default.png" alt="placeholder">
     </div>
 
     <div class="pokemonList col-12">
