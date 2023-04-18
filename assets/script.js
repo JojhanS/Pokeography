@@ -84,6 +84,12 @@ function fetchPokemonsByType(type) {
     .then(function (data) {
       var pokemons = data.pokemon.map(pokemon => pokemon.pokemon.name);
       console.log(pokemons);
+      for (var i = 0; i < 20; i++) {{
+          var listItem = document.createElement('li');
+          listItem.textContent = pokemons[i];
+          pokeList.appendChild(listItem);
+          console.log(listItem);
+      }
+    }
     });
-}
-
+   }
