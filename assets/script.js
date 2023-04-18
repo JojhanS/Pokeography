@@ -6,7 +6,7 @@ document.getElementById('cityButton').addEventListener('click', function(event){
     locationString = document.getElementById('city').value;
     getWeather(locationString)
 })
-
+// Fetches weather API
 function getWeather(locationString) {
 fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current?access_key=467d2d28bb72eef64b59c2d804a83de6&query="+locationString+"&units=f")
 .then(function (response) {
@@ -19,11 +19,17 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
         var getWindSpeed = data.current.wind_speed
         var getTemp = data.current.temperature
         var isDay = data.current.is_day
+        var getDesc = data.current.weather_descriptions
         console.log(getWindSpeed);
         console.log(getTemp);
         console.log(isDay);
         console.log(getWeatherCode);
-
+        
+// Displays current weather
+        document.getElementById("temp").textContent = "Temperature: " + getTemp;
+        document.getElementById("weatherDesc").textContent = "Weather: " + getDesc;
+        document.getElementById("windSpeed").textContent = "Windspeed: " + getWindSpeed;
+// Displays type of pokemon and changes animation 
         if (getWeatherCode > 310) {
           fetchPokemonsByType("ice");
           document.getElementById("img").src ="./assets/images/Snowing.gif";
@@ -69,7 +75,7 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
         }
 })
 }
-
+// fetches pokemon by type
 function fetchPokemonsByType(type) {
   fetch(`https://pokeapi.co/api/v2/type/${type}`, {})
     .then(function (response) {
