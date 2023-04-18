@@ -24,7 +24,7 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
         console.log(getTemp);
         console.log(isDay);
         console.log(getWeatherCode);
-        
+            
 // Displays current weather
         document.getElementById("temp").textContent = "Temperature: " + getTemp;
         document.getElementById("weatherDesc").textContent = "Weather: " + getDesc;
