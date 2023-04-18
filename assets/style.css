@@ -33,8 +33,10 @@ audio{
 
 }
 
+
   li {
     float:left;
+    clear: left;
   }
   
   li a {
