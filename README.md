@@ -17,6 +17,8 @@ https://weatherstack.com/
 https://medium.com/@sergio13prez/fetching-them-all-poke-api-62ca580981a2
 
 ### Using Weatherstack API 
+https://www.youtube.com/watch?v=MaJ7sDUFIwA&t=577s&pp=ygUZd29yayBkYXkgc2NoZWR1bGVyIGpxdWVyeQ%3D%3D
+https://www.youtube.com/watch?v=M5FBzwmC1uM&t=269s&pp=ygUZd29yayBkYXkgc2NoZWR1bGVyIGpxdWVyeQ%3D%3D
 
 #### WeatherCodes
 395	Moderate or heavy snow in area with thunder	wsymbol_0012_heavy_snow_showers	wsymbol_0028_heavy_snow_showers_night
