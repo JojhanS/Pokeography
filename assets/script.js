@@ -8,7 +8,7 @@ document.getElementById('cityButton').addEventListener('click', function(event){
 })
 // Fetches weather API
 function getWeather(locationString) {
-fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current?access_key=467d2d28bb72eef64b59c2d804a83de6&query="+locationString+"&units=f")
+fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current?access_key=3e689cc39942d507fb5caad343568c8e&query="+locationString+"&units=f")
 .then(function (response) {
     console.log("hi");
     return response.json();
@@ -75,21 +75,29 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
         }
 })
 }
-// fetches pokemon by type
-function fetchPokemonsByType(type) {
-  fetch(`https://pokeapi.co/api/v2/type/${type}`, {})
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      var pokemons = data.pokemon.map(pokemon => pokemon.pokemon.name);
-      console.log(pokemons);
-      for (var i = 0; i < 20; i++) {{
+
+   function fetchPokemonsByType(type) {
+    fetch(`https://pokeapi.co/api/v2/type/${type}`, {})
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        var results = data.pokemon.map(pokemon => pokemon.pokemon.name);
+        var randomPokemon = getRandomPokemon(results, 20);
+        console.log(randomPokemon)
+
+        for (var i = 0; i < randomPokemon.length; i++){
           var listItem = document.createElement('li');
-          listItem.textContent = pokemons[i];
+          listItem.textContent = randomPokemon[i];
           pokeList.appendChild(listItem);
           console.log(listItem);
-      }
+        }
+        })};
+  
+  
+    
+    function getRandomPokemon(array, size){
+      var shuffled = array.sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, size);
     }
-    });
-   }
+  
