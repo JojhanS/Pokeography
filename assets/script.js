@@ -51,7 +51,7 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
           document.getElementById("img").src ="./assets/images/Raining.gif";
           document.getElementById("img2").src ="./assets/images/Raining.gif";
         }
-        else if (getWeatherCode > 311) {
+        else if (getWeatherCode > 310) {
           fetchPokemonsByType("ice");
           document.getElementById("img").src ="./assets/images/Snowing.gif";
           document.getElementById("img2").src ="./assets/images/Snowing.gif";
