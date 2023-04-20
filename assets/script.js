@@ -16,7 +16,7 @@ document.getElementById('cityButton').addEventListener('click', function(event){
 })
 // Fetches weather API
 function getWeather(locationString) {
-fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current?access_key=3e689cc39942d507fb5caad343568c8e&query="+locationString+"&units=f")
+fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current?access_key=79fe4931f6aec9fd7ed75babcf10bfc8&query="+locationString+"&units=f")
 .then(function (response) {
     console.log("hi");
     return response.json();
