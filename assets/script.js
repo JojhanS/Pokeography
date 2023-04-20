@@ -1,11 +1,18 @@
 // Weather API
 var locationString = "";
 var weatherContainer = document.getElementById("weather");
+var userData = localStorage.getItem('city')
+console.log(userData)
+
+
+
 document.getElementById('cityButton').addEventListener('click', function(event){
     event.preventDefault();
     pokeList.innerHTML = "";
     locationString = document.getElementById('city').value;
     getWeather(locationString)
+    localStorage.setItem('city', locationString)
+
 })
 // Fetches weather API
 function getWeather(locationString) {
@@ -121,3 +128,4 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
       return shuffled.slice(0, size);
     }
   
+    getWeather(userData)
