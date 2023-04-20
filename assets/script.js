@@ -31,7 +31,12 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
         document.getElementById("weatherDesc").textContent = "Weather: " + getDesc;
         document.getElementById("windSpeed").textContent = "Windspeed: " + getWindSpeed;
 // Displays type of pokemon and changes animation 
-        if (getWeatherCode > 310) {
+        if(getWeatherCode > 385) {
+          fetchPokemonsByType("electric");
+          document.getElementById("img").src ="./assets/images/Lightning.gif";
+          document.getElementById("img2").src ="./assets/images/Lightning.gif";
+        }
+        else if (getWeatherCode > 310) {
           fetchPokemonsByType("ice");
           document.getElementById("img").src ="./assets/images/Snowing.gif";
           document.getElementById("img2").src ="./assets/images/Snowing.gif";
@@ -49,7 +54,7 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
         else if (getWeatherCode > 199) {
           fetchPokemonsByType("electric");
           document.getElementById("img").src ="./assets/images/Lightning.gif";
-          document.getElementById("img2").src ="./assets/images/Lighting.gif";
+          document.getElementById("img2").src ="./assets/images/Lightning.gif";
 
         }
         else if (getWeatherCode > 115) {
