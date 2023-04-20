@@ -3,6 +3,7 @@ var locationString = "";
 var weatherContainer = document.getElementById("weather");
 document.getElementById('cityButton').addEventListener('click', function(event){
     event.preventDefault();
+    pokeList.innerHTML = "";
     locationString = document.getElementById('city').value;
     getWeather(locationString)
 })
@@ -85,7 +86,6 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
         var results = data.pokemon.map(pokemon => pokemon.pokemon.name);
         var randomPokemon = getRandomPokemon(results, 20);
         console.log(randomPokemon)
-
         for (var i = 0; i < randomPokemon.length; i++){
           var listItem = document.createElement('li');
           listItem.textContent = randomPokemon[i];
