@@ -41,7 +41,17 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
           document.getElementById("img").src ="./assets/images/Lightning.gif";
           document.getElementById("img2").src ="./assets/images/Lightning.gif";
         }
-        else if (getWeatherCode > 310) {
+        else if (getWeatherCode > 361) {
+          fetchPokemonsByType("ice");
+          document.getElementById("img").src ="./assets/images/Snowing.gif";
+          document.getElementById("img2").src ="./assets/images/Snowing.gif";
+        }
+        else if (getWeatherCode > 352) {
+          fetchPokemonsByType("water")
+          document.getElementById("img").src ="./assets/images/Raining.gif";
+          document.getElementById("img2").src ="./assets/images/Raining.gif";
+        }
+        else if (getWeatherCode > 311) {
           fetchPokemonsByType("ice");
           document.getElementById("img").src ="./assets/images/Snowing.gif";
           document.getElementById("img2").src ="./assets/images/Snowing.gif";
@@ -73,7 +83,7 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
           document.getElementById("img2").src ="./assets/images/Grass-Sunny.gif";
         }
         
-        if(getWindSpeed > 16) {
+        if(getWindSpeed > 14) {
             fetchPokemonsByType("flying");
             document.getElementById("img").src ="./assets/images/Windy.gif";
             document.getElementById("img2").src ="./assets/images/Windy.gif";
