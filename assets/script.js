@@ -31,6 +31,11 @@ fetch("https://chriscastle.com/proxy/?:proxy:http://api.weatherstack.com/current
         document.getElementById("weatherDesc").textContent = "Weather: " + getDesc;
         document.getElementById("windSpeed").textContent = "Windspeed: " + getWindSpeed;
 // Displays type of pokemon and changes animation 
+
+        if(isDay === "no") {
+          fetchPokemonsByType("dark");
+        }
+
         if(getWeatherCode > 385) {
           fetchPokemonsByType("electric");
           document.getElementById("img").src ="./assets/images/Lightning.gif";
