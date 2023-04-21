@@ -70,3 +70,5 @@ https://www.youtube.com/watch?v=M5FBzwmC1uM&t=269s&pp=ygUZd29yayBkYXkgc2NoZWR1bG
 116	Partly Cloudy	wsymbol_0002_sunny_intervals	wsymbol_0008_clear_sky_night
 113	Clear/Sunny	wsymbol_0001_sunny	wsymbol_0008_clear_sky_night
 
+## Links
+https://jojhans.github.io/Pokeography/
